@@ -1,16 +1,15 @@
 package main
 
-import (
-	"log"
-	"nmap/client/application/service/network"
-)
+import "nmap/client/application/gui"
+
 
 func main() {
-	adaptors,err:=network.Adaptors()
-	if err != nil {
-		log.Fatal(err)
-	}
-	for i, adaptor := range adaptors {
-		log.Println(i,adaptor)
-	}
+	gui.Start()
+	//adaptors,err:=network.Adaptors()
+	//if err != nil {
+	//	log.Fatal(err)
+	//}
+	//for i, adaptor := range adaptors {
+	//	log.Println(i,adaptor)
+	//}
 }
