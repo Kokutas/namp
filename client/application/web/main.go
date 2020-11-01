@@ -2,7 +2,7 @@ package main
 
 import (
 	"log"
-	"nmap/server/web/service/network"
+	"nmap/client/web/service/network"
 )
 
 func main() {
